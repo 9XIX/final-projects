@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Styles - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Alex Styles</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" data-tooltip="Learn more about me">About Me</a></li>
+                    <li><a href="#portfolio" data-tooltip="View my projects">Portfolio</a></li>
+                    <li><a href="#contact" data-tooltip="Get in touch">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-me container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Alex Styles, a passionate graphic designer with a keen eye for detail and a love for creating visually stunning and effective designs. With a background in branding, web design, and print media, I help businesses and individuals bring their visions to life.</p>
+            <p>My approach is collaborative and client-focused, ensuring that every project not only meets but exceeds expectations. I believe in the power of good design to communicate, inspire, and connect.</p>
+        </section>
+
+        <section id="portfolio" class="portfolio container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="project-thumbnail" data-project="project1">
+                    <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of Project 1.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                <div class="project-thumbnail" data-project="project2">
+                    <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of Project 2.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                <div class="project-thumbnail" data-project="project3">
+                    <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of Project 3.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                <div class="project-thumbnail" data-project="project4">
+                    <img src="https://via.placeholder.com/300x200?text=Project+4" alt="Project 4">
+                    <h3>Project Title 4</h3>
+                    <p>A brief description of Project 4.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>Ready to start a project or just want to say hello? Fill out the form below or connect with me on social media!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Alex Styles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalProjectTitle"></h3>
+            <img id="modalProjectImage" src="" alt="Project Image">
+            <p id="modalProjectDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
